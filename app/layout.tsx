@@ -1,0 +1,24 @@
+import type { Metadata } from 'next';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'Anna Kupiec - Psychoterapia Poznań | EMDR, NARM, Trauma',
+  description: 'Profesjonalny gabinet psychoterapii w Poznaniu. Specjalizacja w pracy z traumą relacyjną, EMDR, NARM. Psychoterapia indywidualna, par i rodzin. Umów wizytę.',
+  keywords: ['psychoterapia', 'Poznań', 'terapia EMDR', 'terapia NARM', 'trauma relacyjna', 'psychoterapeuta Poznań', 'terapia par', 'terapia rodzinna', 'Anna Kupiec'],
+  openGraph: {
+    title: 'Anna Kupiec - Psychoterapia Poznań',
+    description: 'Profesjonalny gabinet psychoterapii. Specjalizacja w pracy z traumą relacyjną, EMDR, NARM.',
+    locale: 'pl_PL',
+    type: 'website',
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="pl">
+      <body className="font-sans text-gray-800 antialiased bg-[#FAFAFA]" suppressHydrationWarning>
+        {children}
+      </body>
+    </html>
+  );
+}
