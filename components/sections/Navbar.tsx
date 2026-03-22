@@ -3,16 +3,21 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 export const navLinks = [
-  { name: 'O mnie', href: '#o-mnie' },
-  { name: 'Specjalizacja', href: '#specjalizacja' },
-  { name: 'Metody pracy', href: '#metody' },
-  { name: 'Cennik', href: '#cennik' },
-  { name: 'Kontakt', href: '#kontakt' },
+  { name: 'O mnie', href: '/#o-mnie' },
+  { name: 'Specjalizacja', href: '/#specjalizacja' },
+  { name: 'Metody pracy', href: '/#metody' },
+  { name: 'Cennik', href: '/#cennik' },
+  { name: 'Kontakt', href: '/#kontakt' },
 ];
 
-export default function Navbar() {
+interface NavbarProps {
+  isSolid?: boolean;
+}
+
+export default function Navbar({ isSolid = false }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -24,40 +29,42 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const activeState = isScrolled || isSolid;
+
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+        activeState ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <a href="#" className={`font-serif text-2xl tracking-wide font-medium transition-colors ${isScrolled ? 'text-slate-900' : 'text-white drop-shadow-md'}`}>
+        <Link href="/" className={`font-serif text-2xl tracking-wide font-medium transition-colors ${activeState ? 'text-slate-900' : 'text-white drop-shadow-md'}`}>
           Anna Kupiec
-        </a>
+        </Link>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a 
+            <Link 
               key={link.name} 
               href={link.href} 
               className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-[#5A7358] ${
-                isScrolled ? 'text-slate-600' : 'text-white/90 drop-shadow-md'
+                activeState ? 'text-slate-600' : 'text-white/90 drop-shadow-md'
               }`}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a 
-            href="#kontakt" 
+          <Link 
+            href="/#kontakt" 
             className={`px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide uppercase transition-all ${
-              isScrolled 
+              activeState 
                 ? 'bg-[#5A7358] text-white hover:bg-[#4a6048] shadow-md hover:shadow-lg' 
                 : 'bg-white text-[#5A7358] hover:bg-gray-50 shadow-lg'
             }`}
           >
             Umów wizytę
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -66,9 +73,9 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <X className={`w-6 h-6 ${isScrolled ? 'text-slate-900' : 'text-white'}`} />
+            <X className={`w-6 h-6 ${activeState ? 'text-slate-900' : 'text-white'}`} />
           ) : (
-            <Menu className={`w-6 h-6 ${isScrolled ? 'text-slate-900' : 'text-white'}`} />
+            <Menu className={`w-6 h-6 ${activeState ? 'text-slate-900' : 'text-white'}`} />
           )}
         </button>
       </div>
@@ -84,14 +91,14 @@ export default function Navbar() {
           >
             <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-4 text-base font-medium text-slate-700 hover:text-[#5A7358] hover:bg-slate-50 rounded-lg uppercase tracking-wide"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </motion.div>

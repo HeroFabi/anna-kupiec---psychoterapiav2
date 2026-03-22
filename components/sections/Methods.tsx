@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { FadeIn } from '@/components/ui/FadeIn';
+import Link from 'next/link';
 
 export default function Methods() {
   return (
@@ -13,30 +14,46 @@ export default function Methods() {
         </div>
       </FadeIn>
       
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* EMDR */}
         <FadeIn delay={0.2}>
-          <div className="bg-white rounded-3xl p-10 md:p-14 shadow-sm hover:shadow-xl transition-all border border-slate-100 h-full flex flex-col group relative overflow-hidden">
+          <div className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl transition-all border border-slate-100 h-full flex flex-col group relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#5A7358]/20 to-[#5A7358] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
             <h3 className="font-serif text-3xl mb-6 text-slate-900">EMDR</h3>
             <p className="text-slate-600 font-light leading-relaxed mb-8 flex-grow">
-              Terapia EMDR stosowana jest w leczeniu zespołu stresu pourazowego (PTSD). Z czasem badania potwierdziły jej skuteczność w znacznie szerszym zakresie zaburzeń o podłożu lękowym, zaburzeń obsesyjno-kompulsywnych i depresji. Od lat metodę tą stosuje się z powodzeniem w leczeniu psychologicznych traum, wynikających z różnego rodzaju trudnych doświadczeń tj. przemocy fizycznej lub psychicznej, zaniedbania, molestowania seksualnego, gwałtu, wypadków drogowych, klęsk żywiołowych, bycia świadkiem czyjejś śmierci lub towarzyszenie bliskim w chorobie i in.
+              Terapia EMDR stosowana jest m.in. w leczeniu zespołu stresu pourazowego (PTSD), zaburzeń lękowych czy fobii. Pomaga skutecznie przetwarzać wspomnienia z trudnych i traumatycznych zdarzeń, aby przestały obciążać teraźniejszość.
             </p>
-            <a href="#kontakt" className="inline-flex items-center text-[#5A7358] font-medium hover:text-[#4a6048] transition-colors mt-auto">
-              Zapytaj o terapię <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            <Link href="/metody-pracy#emdr" className="inline-flex items-center text-[#5A7358] font-medium hover:text-[#4a6048] transition-colors mt-auto">
+              Dowiedz się więcej <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </FadeIn>
         
-        <FadeIn delay={0.4}>
-          <div className="bg-white rounded-3xl p-10 md:p-14 shadow-sm hover:shadow-xl transition-all border border-slate-100 h-full flex flex-col group relative overflow-hidden">
+        {/* NARM */}
+        <FadeIn delay={0.3}>
+          <div className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl transition-all border border-slate-100 h-full flex flex-col group relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#5A7358]/20 to-[#5A7358] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-            <h3 className="font-serif text-3xl mb-6 text-slate-900">NARM</h3>
+            <h3 className="font-serif text-3xl mb-6 text-slate-900">NARM™</h3>
             <p className="text-slate-600 font-light leading-relaxed mb-8 flex-grow">
-              Metoda zajmująca się leczeniem traumy relacji i przywiązania poprzez pracę nad wczesnymi nieświadomymi wzorcami zerwania więzi (np. gdy opiekun dziecka jest: niedostępny fizycznie bądź emocjonalnie, w depresji, w uzależnieniach, stosuje przemoc, dziecko przeżyło traumę lub zaszły inne przeszkody na drodze do zbudowania bliskości), które wpływają na naszą tożsamość, emocje, fizjologię oraz zachowania.
+              Metoda zajmująca się leczeniem traumy relacji i przywiązania. Skupia się m.in. na wczesnych wzorcach wchodzenia w więź oraz regulacji układu nerwowego, ułatwiając budowanie satysfakcjonującej relacji ze sobą i ludźmi.
             </p>
-            <a href="#kontakt" className="inline-flex items-center text-[#5A7358] font-medium hover:text-[#4a6048] transition-colors mt-auto">
-              Zapytaj o terapię <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            <Link href="/metody-pracy#narm" className="inline-flex items-center text-[#5A7358] font-medium hover:text-[#4a6048] transition-colors mt-auto">
+              Dowiedz się więcej <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </FadeIn>
+
+        {/* LOGOTERAPIA */}
+        <FadeIn delay={0.4}>
+          <div className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl transition-all border border-slate-100 h-full flex flex-col group relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#5A7358]/20 to-[#5A7358] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+            <h3 className="font-serif text-3xl mb-6 text-slate-900">Logoterapia</h3>
+            <p className="text-slate-600 font-light leading-relaxed mb-8 flex-grow">
+              Nurt oparty na przekonaniu, że naszą wielką potrzebą jest poczucie sensu. Poczucie sensu, własnej woli oraz odpowiedzialności pomaga człowiekowi radzić sobie w kryzysach oraz brać odważne stery za swoje życie.
+            </p>
+            <Link href="/metody-pracy#logoterapia" className="inline-flex items-center text-[#5A7358] font-medium hover:text-[#4a6048] transition-colors mt-auto">
+              Dowiedz się więcej <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </FadeIn>
       </div>
