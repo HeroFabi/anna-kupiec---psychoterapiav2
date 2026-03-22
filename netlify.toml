@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# The following settings help ensure Netlify correctly identifies
+# Next.js App Router and handles the static/serverless hybrid deployment.
+
+[context.production.environment]
+  NODE_ENV = "production"

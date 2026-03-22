@@ -1,64 +1,62 @@
-# GEMINI.md - Anna Kupiec Psychotherapy Project
+# Anna Kupiec - Psychotherapy Project
+
+This is a professional psychotherapy portfolio website for Anna Kupiec, based in Poznań, Poland. The project is a modern Next.js 15+ application designed with a focus on trauma therapy, EMDR, and NARM.
 
 ## Project Overview
-This project is a modern, responsive, and visually polished professional website for **Anna Kupiec**, a psychotherapist specializing in trauma therapy (EMDR, NARM) based in Poznań, Poland. It is built as a single-page application using **Next.js 15** and **React 19**.
 
-### Main Technologies:
-- **Framework:** Next.js 15 (App Router, Standalone output)
-- **UI Library:** React 19
-- **Styling:** Tailwind CSS 4 (utilizing the new `@import "tailwindcss";` pattern)
-- **Animations:** Framer Motion (`motion/react`) for scroll-triggered and interactive animations
-- **Icons:** Lucide React
-- **Typography:** Google Fonts (Cormorant Garamond for serif headings, Montserrat for sans-serif body text)
-- **Development:** TypeScript, ESLint
+- **Purpose:** Professional portfolio and service landing page for a psychotherapist.
+- **Key Features:**
+    - Therapeutic methods (EMDR, NARM).
+    - Specialization and symptoms sections.
+    - Info tiles for psychotherapy benefits.
+    - Pricing and contact sections.
+    - Responsive design with polished animations.
+- **Main Technologies:**
+    - **Framework:** [Next.js 15+](https://nextjs.org/) (App Router).
+    - **Language:** [TypeScript](https://www.typescriptlang.org/).
+    - **Styling:** [Tailwind CSS 4](https://tailwindcss.com/) with Vanilla CSS.
+    - **Animations:** [Framer Motion](https://www.framer.com/motion/) (v12).
+    - **Icons:** [Lucide React](https://lucide.dev/).
+    - **API Integration:** `@google/genai` (Gemini API).
 
-### Project Structure:
-- `app/`: Contains the main application routes and layouts.
-    - `layout.tsx`: Root layout with SEO metadata and global font configurations.
-    - `page.tsx`: The primary single-page landing with all sections.
-    - `globals.css`: Tailwind 4 configuration and font imports.
-- `components/`: Reusable React components.
-    - `sections/`: Main content sections for the landing page (Hero, About, Methods, Specialization, Pricing, Contact, etc.).
-    - `ui/`: Shared UI components (e.g., `FadeIn`).
-- `lib/`: Utility functions (e.g., `cn` for Tailwind class merging).
+## Project Structure
+
+- `app/`: Contains the Next.js App Router pages and global styles.
+    - `metody-pracy/`: A separate page for therapeutic methods.
+- `components/`: Organized UI components.
+    - `sections/`: Full-page sections (Hero, About, Contact, etc.).
+    - `ui/`: Reusable, lower-level UI components (e.g., `FadeIn`).
 - `hooks/`: Custom React hooks (e.g., `use-mobile`).
-- `public/`: Static assets (images, icons).
+- `lib/`: Utility functions (e.g., `clsx` and `tailwind-merge` helpers).
+- `public/`: Static assets like images and branding.
 
 ## Building and Running
 
-### Development
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-2. **Environment Setup:**
-   - Create a `.env.local` file (copying from `.env.example` if available).
-   - Set `GEMINI_API_KEY` if AI features are implemented (the dependency `@google/genai` is present but currently unused).
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
 
-### Production
-1. **Build the project:**
-   ```bash
-   npm run build
-   ```
-2. **Start the production server:**
-   ```bash
-   npm run start
-   ```
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Other Commands
-- **Linting:** `npm run lint`
-- **Clean Cache:** `npm run clean`
+### Commands
+
+| Command | Description |
+| :--- | :--- |
+| `npm install` | Install project dependencies. |
+| `npm run dev` | Start the development server at `http://localhost:3000`. |
+| `npm run build` | Build the application for production. |
+| `npm run start` | Start the production server after building. |
+| `npm run lint` | Run ESLint to check for code quality issues. |
+| `npm run clean` | Clean the `.next` build cache. |
+
+### Configuration
+
+- Create a `.env.local` file based on `.env.example`.
+- Set the `GEMINI_API_KEY` for AI features.
 
 ## Development Conventions
 
-- **Internationalization:** The content is currently in **Polish** (`pl`).
-- **Styling:** Use Tailwind CSS 4 classes. Follow the established color palette (primarily `#5A7358` for the signature green and `#FAFAFA` for backgrounds).
-- **Components:** Prefer functional components with hooks. Use the `FadeIn` component in `app/page.tsx` for consistent entrance animations.
-- **Images:** Remote images are allowed from `picsum.photos`. If adding new domains, update `next.config.ts`.
-- **HMR:** Note that `next.config.ts` includes logic to disable HMR via `DISABLE_HMR` environment variable for specific environments (like AI Studio).
-- **SEO:** Metadata is centrally managed in `app/layout.tsx`. Ensure any new pages or significant content changes update these tags for Polish search optimization.
+- **Component-Driven:** Sections are located in `components/sections/` to keep `app/page.tsx` clean.
+- **TypeScript:** Strict typing is used throughout the project.
+- **Styling:** Utility-first Tailwind CSS, with custom configuration in `next.config.ts` and `postcss.config.mjs`.
+- **Animations:** Use `motion` for consistent entry and interactive animations.
+- **Localization:** The site is primary in Polish (`pl`).
