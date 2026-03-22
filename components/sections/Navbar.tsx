@@ -37,7 +37,14 @@ export default function Navbar({ isSolid = false }: NavbarProps) {
         activeState ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      {/* Background Gradient for readability before scrolling */}
+      <div 
+        className={`absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none transition-opacity duration-300 ${
+          activeState ? 'opacity-0' : 'opacity-100'
+        } -z-10`}
+      />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center relative z-10">
         <Link href="/" className={`font-serif text-2xl tracking-wide font-medium transition-colors ${activeState ? 'text-slate-900' : 'text-white drop-shadow-md'}`}>
           Anna Kupiec
         </Link>

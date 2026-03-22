@@ -13,7 +13,7 @@ import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col bg-[#FAFAFA] text-slate-800 selection:bg-[#5A7358]/20">
+    <main className="min-h-screen flex flex-col bg-[#FAFAFA] text-slate-800 selection:bg-[#5A7358]/20 w-full overflow-x-hidden relative">
       <Navbar />
       <Hero />
       <Specialization />
