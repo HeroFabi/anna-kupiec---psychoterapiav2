@@ -18,7 +18,7 @@ export default function Contact() {
     const formData = new FormData(myForm);
     
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
@@ -108,7 +108,7 @@ export default function Contact() {
               <form 
                 name="contact" 
                 method="POST" 
-                action="/"
+                action="/__forms.html"
                 data-netlify="true" 
                 onSubmit={handleSubmit}
                 className="space-y-6"
