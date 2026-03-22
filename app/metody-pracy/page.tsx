@@ -51,7 +51,7 @@ export default function MetodyPracyPage() {
           <div className="max-w-5xl mx-auto">
             <FadeIn>
               <div className="grid md:grid-cols-12 gap-12 items-start">
-                <div className="md:col-span-4 sticky top-32">
+                <div className="md:col-span-4 md:sticky md:top-32">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-14 h-14 rounded-2xl bg-[#5A7358] flex items-center justify-center text-white shadow-lg shadow-[#5A7358]/20">
                       <Brain className="w-7 h-7" />
@@ -110,7 +110,7 @@ export default function MetodyPracyPage() {
             <div className="max-w-5xl mx-auto">
               <FadeIn>
                 <div className="grid md:grid-cols-12 gap-12 items-start">
-                  <div className="md:col-span-4 sticky top-32">
+                  <div className="md:col-span-4 md:sticky md:top-32">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-14 h-14 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-[#5A7358] shadow-sm">
                         <HelpCircle className="w-7 h-7" />
@@ -169,7 +169,7 @@ export default function MetodyPracyPage() {
           <div className="max-w-5xl mx-auto">
             <FadeIn>
               <div className="grid md:grid-cols-12 gap-12 items-start">
-                <div className="md:col-span-4 sticky top-32">
+                <div className="md:col-span-4 md:sticky md:top-32">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-14 h-14 rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-lg">
                       <Compass className="w-7 h-7" />

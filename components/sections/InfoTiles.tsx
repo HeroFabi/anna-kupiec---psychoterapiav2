@@ -12,11 +12,10 @@ export default function InfoTiles() {
             <div className="relative w-full aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 bg-slate-900/10 z-10 group-hover:bg-transparent transition-colors duration-500" />
               <Image 
-                src="https://picsum.photos/seed/therapy1/600/450" 
+                src="/images/osoba_na_terapii.jpg" 
                 alt="Sesja terapeutyczna" 
                 fill 
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" 
-                referrerPolicy="no-referrer" 
               />
             </div>
             <div className="p-8 md:p-10 flex flex-col flex-grow">
@@ -46,11 +45,10 @@ export default function InfoTiles() {
             <div className="relative w-full aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 bg-slate-900/10 z-10 group-hover:bg-transparent transition-colors duration-500" />
               <Image 
-                src="https://picsum.photos/seed/therapy2/600/450" 
+                src="/images/Relaksująca.jpg" 
                 alt="Rozmowa terapeutyczna" 
                 fill 
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" 
-                referrerPolicy="no-referrer" 
               />
             </div>
             <div className="p-8 md:p-10 flex flex-col flex-grow">
@@ -74,11 +72,10 @@ export default function InfoTiles() {
             <div className="relative w-full aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 bg-slate-900/10 z-10 group-hover:bg-transparent transition-colors duration-500" />
               <Image 
-                src="https://picsum.photos/seed/coffee/600/450" 
+                src="/images/Roslina__1.jpg" 
                 alt="Dwie filiżanki kawy" 
                 fill 
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" 
-                referrerPolicy="no-referrer" 
               />
             </div>
             <div className="p-8 md:p-10 flex flex-col flex-grow">

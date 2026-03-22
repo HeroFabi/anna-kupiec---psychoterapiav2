@@ -8,11 +8,10 @@ export default function About() {
         <FadeIn direction="right">
           <div className="relative h-[700px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="https://picsum.photos/seed/portrait/800/1000"
+              src="/images/TOP_1.jpg"
               alt="Portret psychoterapeuty"
               fill
               className="object-cover"
-              referrerPolicy="no-referrer"
             />
           </div>
         </FadeIn>

@@ -43,11 +43,10 @@ export default function Symptoms() {
             <FadeIn delay={0.4} direction="left">
               <div className="relative h-[700px] rounded-3xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://picsum.photos/seed/tent/800/1000"
-                  alt="Osoba w namiocie patrząca na góry"
+                  src="/images/Relaksująca.jpg"
+                  alt="Spokojny krajobraz sprzyjający refleksji"
                   fill
                   className="object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </FadeIn>

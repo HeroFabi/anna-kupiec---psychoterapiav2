@@ -21,11 +21,10 @@ export default function Specialization() {
         <FadeIn direction="right">
           <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="https://picsum.photos/seed/plant/800/1000"
+              src="/images/Roslina__1.jpg"
               alt="Rosnąca roślina w dłoniach - symbol wzrostu"
               fill
               className="object-cover hover:scale-105 transition-transform duration-1000"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           </div>
