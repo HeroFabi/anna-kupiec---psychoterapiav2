@@ -15,19 +15,18 @@ export default function About() {
             />
           </div>
         </FadeIn>
-        
+
         <FadeIn>
           <div>
-            <span className="text-[#5A7358] font-semibold tracking-widest uppercase text-xs mb-3 block">Poznajmy się</span>
             <h2 className="font-serif text-4xl md:text-5xl mb-10 text-slate-900">
               O Mnie
             </h2>
-            
+
             <div className="prose prose-slate prose-lg font-light text-slate-600">
               <p>
                 Jestem magistrem psychologii klinicznej oraz magistrem informatyki w naukach eksperymentalnych. Poszukuję jak najbardziej skutecznych metod rozwiązywania problemów psychologicznych, wykorzystując do tego najnowsze badania naukowe.
               </p>
-              
+
               <h4 className="font-serif text-2xl text-slate-900 mt-12 mb-6">Przygotowanie:</h4>
               <ul className="space-y-4 list-none pl-0">
                 <li className="flex items-start">
@@ -55,6 +54,10 @@ export default function About() {
                   <span>Posiadam doświadczenie organizowania i prowadzenia treningów rozwojowych.</span>
                 </li>
               </ul>
+              <p className="mt-10 text-slate-900 border-t border-slate-100 pt-8">
+                W życiu prywatnym cenię sobie sztukę i sport.<br />
+                Interesuję się fizyką kwantową i duchowością w psychoterapii.
+              </p>
             </div>
           </div>
         </FadeIn>

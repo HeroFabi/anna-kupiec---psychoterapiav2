@@ -13,13 +13,12 @@ export default function Pricing() {
       <div className="max-w-5xl mx-auto">
         <FadeIn>
           <div className="text-center mb-16">
-            <span className="text-[#5A7358] font-semibold tracking-widest uppercase text-xs mb-3 block">Inwestycja w siebie</span>
             <h2 className="font-serif text-4xl md:text-5xl text-slate-900">
               Cennik
             </h2>
           </div>
         </FadeIn>
-        
+
         <div className="grid md:grid-cols-2 gap-4 mb-16 max-w-3xl mx-auto">
           {prices.map((item, i) => (
             <FadeIn key={i} delay={0.1 * i}>

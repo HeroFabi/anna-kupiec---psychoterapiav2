@@ -31,8 +31,11 @@ export default function Hero() {
           <h1 className="font-serif text-2xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white">
             Bezpieczna przestrzeń <br /><span className="font-light">w leczeniu zranień w relacjach</span>
           </h1>
+          <p className="text-base md:text-lg mb-2 text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
+            Specjalizuję się w pracy z traumą relacyjną,
+          </p>
           <p className="text-base md:text-lg mb-10 text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
-            Specjalizuję się w pracy z traumą relacyjną, wynikających z trudnych relacji i więzi.
+            wynikającą z trudnych relacji i więzi.
           </p>
           <a
             href="#kontakt"
