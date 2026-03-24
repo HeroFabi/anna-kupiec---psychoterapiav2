@@ -29,14 +29,14 @@ export default function Hero() {
             Profesjonalny Gabinet Psychoterapii
           </span>
           <h1 className="font-serif text-2xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white">
-            Bezpieczna przestrzeń <br /><span className="italic font-light">do leczenia relacji</span>
+            Bezpieczna przestrzeń <br /><span className="font-light">w leczeniu zranień w relacjach</span>
           </h1>
           <p className="text-base md:text-lg mb-10 text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
-            Specjalizuję się w pracy z traumą relacyjną. Pomagam leczyć doświadczenia wynikające z trudnych więzi, przywracając równowagę i spokój.
+            Specjalizuję się w pracy z traumą relacyjną, wynikających z trudnych relacji i więzi.
           </p>
           <a
             href="#kontakt"
-            className="inline-flex items-center justify-center bg-white text-[#5A7358] px-10 py-4 rounded-full text-sm font-bold tracking-wider hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 uppercase"
+            className="inline-flex items-center justify-center bg-white text-[#5A7358] px-10 py-4 text-sm font-bold tracking-wider hover:bg-gray-100 transition-all hover:-translate-y-0.5 uppercase"
           >
             Zapytaj o termin
           </a>

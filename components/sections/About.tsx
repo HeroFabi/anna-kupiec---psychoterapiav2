@@ -6,7 +6,7 @@ export default function About() {
     <section id="o-mnie" className="py-24 px-4 max-w-7xl mx-auto w-full">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <FadeIn direction="right">
-          <div className="relative h-[700px] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative h-[700px] overflow-hidden">
             <Image
               src="/images/TOP_1.jpg"
               alt="Portret psychoterapeuty"
@@ -27,23 +27,32 @@ export default function About() {
               <p>
                 Jestem magistrem psychologii klinicznej oraz magistrem informatyki w naukach eksperymentalnych. Poszukuję jak najbardziej skutecznych metod rozwiązywania problemów psychologicznych, wykorzystując do tego najnowsze badania naukowe.
               </p>
-              <p className="font-medium text-slate-800">
-                Specjalizuję się w psychoterapii traum rozwojowych oraz szokowych.
-              </p>
               
-              <h4 className="font-serif text-2xl text-slate-900 mt-12 mb-6">Edukacja i szkolenia</h4>
+              <h4 className="font-serif text-2xl text-slate-900 mt-12 mb-6">Przygotowanie:</h4>
               <ul className="space-y-4 list-none pl-0">
                 <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
-                  <span>4-letni kurs Psychoterapii Systemowej Rodzin w Ośrodku Szkoleń Systemowych w Krakowie.</span>
+                  <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                  <span>4-letni kurs Psychoterapii Systemowej Rodzin w Ośrodku Szkoleń Systemowych w Krakowie, akredytowany przez PTP</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
-                  <span>Ukończyłam pierwsze w Polsce 2-letnie szkolenie z terapii traumy relacji: przywiązania i więzi NARM.</span>
+                  <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                  <span>Ukończyłam pierwsze w Polsce 2-letnie szkolenie z terapii traumy relacji: przywiązania i więzi (Neuro Affective Relational Model™ (NARM™))</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 rounded-full bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                  <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
                   <span>EMDR - Eye Movement Desensitization and Reprocessing – nowatorskie podejście do terapii osób z traumą rozwojową, depresją i lękiem. EMDR jest zalecaną metodą terapii po traumatycznych przeżyciach.</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                  <span>Logoterapia - certyfikowane pełne szkolenie - specjalizacja psychoterapia egzystencjalna, sens życia, duchowość w psychoterapii,</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                  <span>Szkolenie Terapia Krótkoterminowa Skoncentrowana na Rozwiązaniach,</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                  <span>Posiadam doświadczenie organizowania i prowadzenia treningów rozwojowych.</span>
                 </li>
               </ul>
             </div>

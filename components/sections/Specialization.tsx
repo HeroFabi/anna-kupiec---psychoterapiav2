@@ -1,4 +1,4 @@
-import { CheckCircle2 } from 'lucide-react';
+
 import Image from 'next/image';
 import { FadeIn } from '@/components/ui/FadeIn';
 
@@ -19,7 +19,7 @@ export default function Specialization() {
     <section id="specjalizacja" className="py-24 px-4 max-w-7xl mx-auto w-full">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <FadeIn direction="right">
-          <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative h-[600px] overflow-hidden">
             <Image
               src="/images/Roslina__1.jpg"
               alt="Rosnąca roślina w dłoniach - symbol wzrostu"
@@ -29,21 +29,20 @@ export default function Specialization() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           </div>
         </FadeIn>
-        
+
         <div>
           <FadeIn>
-            <span className="text-[#5A7358] font-semibold tracking-widest uppercase text-xs mb-3 block">W czym pomagam</span>
             <h2 className="font-serif text-4xl md:text-5xl mb-10 text-slate-900">
               Obszary Specjalizacji
             </h2>
           </FadeIn>
-          
+
           <FadeIn delay={0.2}>
-            <ul className="space-y-5 text-slate-700">
+            <ul className="space-y-3 text-[#5A7358]">
               {items.map((item, i) => (
-                <li key={i} className="flex items-start group">
-                  <CheckCircle2 className="w-6 h-6 text-[#5A7358]/70 mr-4 shrink-0 mt-0.5 group-hover:text-[#5A7358] transition-colors" />
-                  <span className="text-lg font-light leading-relaxed">{item}</span>
+                <li key={i} className="flex items-center group">
+                  <div className="w-1.5 h-1.5 bg-[#5A7358] mr-4 shrink-0" />
+                  <span className="text-base font-normal leading-tight">{item}</span>
                 </li>
               ))}
             </ul>

@@ -19,29 +19,28 @@ export default function Symptoms() {
     <section className="py-24 px-4 bg-[#F3F4F1] w-full">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#5A7358] font-semibold tracking-widest uppercase text-xs mb-3 block">Rozpoznaj swoje potrzeby</span>
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="font-serif text-4xl md:text-5xl text-slate-900 mb-6">
               Czy często...
             </h2>
           </div>
         </FadeIn>
-        
+
         <div className="grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-3">
             {symptoms.map((item, i) => (
               <FadeIn key={i} delay={0.05 * i}>
-                <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-white/50 h-full flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-[#5A7358]/40 mr-4 shrink-0" />
-                  <p className="text-slate-700 font-light">{item}</p>
+                <div className="bg-white px-4 py-3 transition-shadow border border-white/50 h-full flex items-center">
+                  <div className="w-2 h-2 bg-[#5A7358]/40 mr-4 shrink-0" />
+                  <p className="text-slate-700 font-normal text-sm md:text-base leading-snug">{item}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
-          
+
           <div className="lg:col-span-5">
             <FadeIn delay={0.4} direction="left">
-              <div className="relative h-[700px] rounded-3xl overflow-hidden shadow-xl">
+              <div className="relative h-[700px] overflow-hidden">
                 <Image
                   src="/images/Relaksująca.jpg"
                   alt="Spokojny krajobraz sprzyjający refleksji"

@@ -20,15 +20,15 @@ export default function Pricing() {
           </div>
         </FadeIn>
         
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 gap-4 mb-16 max-w-3xl mx-auto">
           {prices.map((item, i) => (
             <FadeIn key={i} delay={0.1 * i}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex justify-between items-center border-l-4 border-[#5A7358]">
+              <div className="bg-white py-4 px-6 transition-shadow flex justify-between items-center border-l-2 border-[#5A7358]">
                 <div>
-                  <h3 className="font-serif text-xl text-slate-900 mb-1">{item.title}</h3>
+                  <h3 className="text-slate-900 font-medium text-[15px]">{item.title}</h3>
                   <p className="text-sm text-slate-500 font-light">{item.time}</p>
                 </div>
-                <div className="text-2xl font-medium text-[#5A7358]">
+                <div className="text-slate-900 font-medium ml-4 shrink-0 text-[15px]">
                   {item.price}
                 </div>
               </div>
@@ -37,16 +37,16 @@ export default function Pricing() {
         </div>
 
         <FadeIn delay={0.4}>
-          <div className="bg-white p-10 rounded-3xl shadow-sm text-slate-600 font-light leading-relaxed text-center max-w-3xl mx-auto">
+          <div className="text-slate-600 font-light leading-relaxed text-center max-w-3xl mx-auto">
             <p className="mb-4">
               Psychoterapia indywidualna, pary, rodziny – to spotkania z psychoterapeutą, które odbywają się w określonej częstotliwości ustalonej między terapeutą a klientem.
             </p>
             <p className="mb-4">
               Psychoterapia jest poprzedzona konsultacją wstępną (1 do 3 spotkań), która pozwala określić cel terapii oraz oczekiwane zmiany.
             </p>
-            <div className="mt-8 inline-block bg-[#5A7358]/10 text-[#5A7358] px-6 py-2 rounded-full text-sm font-medium tracking-wide uppercase">
+            <p className="mt-8 text-[#5A7358] text-sm font-medium tracking-wide uppercase">
               Spotkania mogą odbywać się również online.
-            </div>
+            </p>
           </div>
         </FadeIn>
       </div>

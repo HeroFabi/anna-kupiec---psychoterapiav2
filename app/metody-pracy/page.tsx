@@ -53,7 +53,7 @@ export default function MetodyPracyPage() {
               <div className="grid md:grid-cols-12 gap-12 items-start">
                 <div className="md:col-span-4 md:sticky md:top-32">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 rounded-2xl bg-[#5A7358] flex items-center justify-center text-white shadow-lg shadow-[#5A7358]/20">
+                    <div className="w-14 h-14 bg-[#5A7358] flex items-center justify-center text-white">
                       <Brain className="w-7 h-7" />
                     </div>
                   </div>
@@ -76,7 +76,7 @@ export default function MetodyPracyPage() {
                     </p>
                   </div>
 
-                  <div className="mt-12 p-8 md:p-12 bg-[#FAFAFA] rounded-[2.5rem] border border-slate-100 shadow-sm transition-hover hover:shadow-md duration-500">
+                  <div className="mt-12 p-8 md:p-12 bg-[#FAFAFA] border border-slate-100 transition-hover duration-500">
                     <h3 className="font-serif text-2xl mb-8 text-slate-900 border-b border-slate-200 pb-4 inline-block">
                       Terapia EMDR pomaga szczególnie przy:
                     </h3>
@@ -112,7 +112,7 @@ export default function MetodyPracyPage() {
                 <div className="grid md:grid-cols-12 gap-12 items-start">
                   <div className="md:col-span-4 md:sticky md:top-32">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-[#5A7358] shadow-sm">
+                      <div className="w-14 h-14 bg-white border border-slate-100 flex items-center justify-center text-[#5A7358]">
                         <HelpCircle className="w-7 h-7" />
                       </div>
                     </div>
@@ -135,7 +135,7 @@ export default function MetodyPracyPage() {
                       </p>
                     </div>
 
-                    <div className="mt-12 p-8 md:p-12 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm">
+                    <div className="mt-12 p-8 md:p-12 bg-white border border-slate-100">
                       <h3 className="font-serif text-2xl mb-8 text-slate-900 border-b border-slate-200 pb-4 inline-block">
                         Sięgnij po NARM, jeśli:
                       </h3>
@@ -171,7 +171,7 @@ export default function MetodyPracyPage() {
               <div className="grid md:grid-cols-12 gap-12 items-start">
                 <div className="md:col-span-4 md:sticky md:top-32">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-lg">
+                    <div className="w-14 h-14 bg-slate-900 flex items-center justify-center text-white">
                       <Compass className="w-7 h-7" />
                     </div>
                   </div>
@@ -189,12 +189,12 @@ export default function MetodyPracyPage() {
                     <p>
                       W procesie terapeutycznym wspieram Cię w odkrywaniu Twojego osobistego &quot;dlaczego&quot;. Logoterapia nie analizuje tylko deficytów, ale szuka Twojego potencjału, wolności wewnętrznej i odpowiedzialności za kształt własnego życia.
                     </p>
-                    <div className="bg-[#5A7358]/5 p-8 rounded-3xl border border-[#5A7358]/10 italic my-8">
+                    <div className="bg-[#5A7358]/5 p-8 border border-[#5A7358]/10 italic my-8">
                       &quot;Ten, kto wie, dlaczego żyje, nie musi się martwić o to, jak żyje&quot; – te słowa Victora Frankla, twórcy nurtu, najlepiej oddają ducha tej pracy.
                     </div>
                   </div>
 
-                  <div className="mt-12 p-8 md:p-12 bg-[#FAFAFA] rounded-[2.5rem] border border-slate-100 shadow-sm">
+                  <div className="mt-12 p-8 md:p-12 bg-[#FAFAFA] border border-slate-100">
                     <h3 className="font-serif text-2xl mb-8 text-slate-900 border-b border-slate-200 pb-4 inline-block">
                       Wsparcie w obszarach:
                     </h3>
