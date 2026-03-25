@@ -20,7 +20,7 @@ export default function Symptoms() {
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-serif text-4xl md:text-5xl text-slate-900 mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl text-[#5A7358] mb-6">
               Czy często...
             </h2>
           </div>

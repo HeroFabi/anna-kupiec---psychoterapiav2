@@ -30,7 +30,7 @@ export default function MetodyPracyPage() {
             </div>
 
             <div className="max-w-3xl">
-              <h1 className="font-serif text-3xl md:text-5xl text-slate-900 leading-[1.1] mb-8">
+              <h1 className="font-serif text-3xl md:text-5xl text-[#5A7358] leading-[1.1] mb-8">
                 Poznaj moje <br />
                 <span>metody pracy</span>
               </h1>
@@ -80,7 +80,7 @@ export default function MetodyPracyPage() {
                   </div>
 
                   <div className="mt-12 p-8 md:p-12 bg-[#FAFAFA] border border-slate-100 transition-hover duration-500">
-                    <h3 className="font-serif text-2xl mb-8 text-slate-900 border-b border-slate-200 pb-4 inline-block">
+                    <h3 className="font-serif text-2xl mb-8 text-[#5A7358] border-b border-slate-200 pb-4 inline-block">
                       Terapia EMDR jest szczególnie pomocna w pracy z:
                     </h3>
                     <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
@@ -118,7 +118,7 @@ export default function MetodyPracyPage() {
                   <div className="md:col-span-4 md:sticky md:top-32">
 
                     <h2 className="font-serif text-4xl text-slate-900 mb-4">NARM™</h2>
-                    <p className="text-xs font-bold text-slate-400 tracking-[0.2em] uppercase">
+                    <p className="text-xs font-bold text-[#5A7358] tracking-[0.2em] uppercase">
                       NeuroAffective <br /> Relational Model
                     </p>
                   </div>
@@ -143,7 +143,7 @@ export default function MetodyPracyPage() {
                     </div>
 
                     <div className="mt-12 p-8 md:p-12 bg-white border border-slate-100">
-                      <h3 className="font-serif text-2xl mb-8 text-slate-900 border-b border-slate-200 pb-4 inline-block">
+                      <h3 className="font-serif text-2xl mb-8 text-[#5A7358] border-b border-slate-200 pb-4 inline-block">
                         Metoda polecana jeśli:
                       </h3>
                       <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
@@ -182,7 +182,7 @@ export default function MetodyPracyPage() {
                 <div className="md:col-span-4 md:sticky md:top-32">
 
                   <h2 className="font-serif text-4xl text-slate-900 mb-4">Logoterapia</h2>
-                  <p className="text-xs font-bold text-slate-400 tracking-[0.2em] uppercase">
+                  <p className="text-xs font-bold text-[#5A7358] tracking-[0.2em] uppercase">
                     Psychoterapia skoncentrowana <br /> na sensie
                   </p>
                 </div>
@@ -192,6 +192,11 @@ export default function MetodyPracyPage() {
                     <p>
                       Logoterapia to nurt psychoterapii, której podejście opiera się na przekonaniu, że jedną z najważniejszych ludzkich potrzeb jest <strong>poszukiwanie sensu i znaczenia w życiu</strong>. Poczucie sensu pomaga człowiekowi radzić sobie z trudnościami, cierpieniem i kryzysami życiowymi.
                     </p>
+
+                    <div className="bg-[#5A7358]/5 p-8 border border-[#5A7358]/10 italic my-8 not-prose">
+                      &quot;Ten, kto wie, dlaczego żyje, nie musi się martwić o to, jak żyje&quot; – te słowa Victora Frankla, twórcy nurtu, najlepiej oddają ducha tej pracy.
+                    </div>
+
                     <p>
                       W ujęciu logoterapii wiele trudności psychicznych wiąże się nie tylko z konfliktem wewnętrznym czy objawami emocjonalnymi, lecz także z doświadczeniem utraty znaczenia, kierunku lub wartości, które nadają życiu spójność. Logoterapia zakłada, że nawet w bardzo trudnych okolicznościach człowiek może odnaleźć znaczenie swoich doświadczeń i zachować wewnętrzną wolność w sposobie, w jaki na nie reaguje.
                     </p>
@@ -200,7 +205,7 @@ export default function MetodyPracyPage() {
                     </p>
 
                     <div className="bg-[#5A7358]/5 p-8 border border-[#5A7358]/10 my-8">
-                      <p className="font-serif text-2xl text-slate-800 mb-6 not-prose">Logoterapia opiera się na kilku ważnych ideach:</p>
+                      <p className="font-serif text-2xl text-[#5A7358] mb-6 not-prose">Logoterapia opiera się na kilku ważnych ideach:</p>
                       <ul className="space-y-4 not-prose">
                         <li className="flex items-start">
                           <span className="w-1.5 h-1.5 rounded-full bg-[#5A7358] mr-4 mt-2.5 shrink-0"></span>
@@ -223,7 +228,7 @@ export default function MetodyPracyPage() {
                   </div>
 
                   <div className="mt-12 p-8 md:p-12 bg-[#FAFAFA] border border-slate-100">
-                    <h3 className="font-serif text-2xl mb-8 text-slate-900 border-b border-slate-200 pb-4 inline-block">
+                    <h3 className="font-serif text-2xl mb-8 text-[#5A7358] border-b border-slate-200 pb-4 inline-block">
                       Logoterapia może być szczególnie pomocna w sytuacjach takich jak:
                     </h3>
                     <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">

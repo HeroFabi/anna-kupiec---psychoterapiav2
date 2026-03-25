@@ -18,7 +18,7 @@ export default function About() {
 
         <FadeIn>
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-10 text-slate-900">
+            <h2 className="font-serif text-4xl md:text-5xl mb-10 text-[#5A7358]">
               O Mnie
             </h2>
 

@@ -8,7 +8,7 @@ export default function Methods() {
       <FadeIn>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[#5A7358] font-semibold tracking-widest uppercase text-xs mb-3 block">Podejście terapeutyczne</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-slate-900">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#5A7358]">
             Metody Pracy
           </h2>
         </div>
