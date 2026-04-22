@@ -1,6 +1,5 @@
-'use client';
-
-import Navbar, { navLinks } from '@/components/sections/Navbar';
+import Navbar from '@/components/sections/Navbar';
+import { navLinks } from '@/lib/constants';
 import Hero from '@/components/sections/Hero';
 import Specialization from '@/components/sections/Specialization';
 import Symptoms from '@/components/sections/Symptoms';

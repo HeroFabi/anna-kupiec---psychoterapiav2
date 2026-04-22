@@ -69,6 +69,7 @@ export default function Contact() {
 
             <div className="mt-12 overflow-hidden border border-white/10 h-64 relative group/map">
               <iframe
+                title="Mapa dojazdu do gabinetu Anny Kupiec w Poznaniu"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.789188400843!2d16.90632363471262!3d52.41049679970093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b354ead2ff9%3A0xa07d52204a58bfa!2sAdama%20Mickiewicza%2024%2F4c%2C%2060-835%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1774172539800!5m2!1spl!2spl"
                 className="w-full h-full grayscale-[15%] transition-all group-hover/map:grayscale-0"
                 style={{ border: 0 }}
@@ -115,17 +116,19 @@ export default function Contact() {
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Imię i nazwisko</label>
+                    <label htmlFor="name" className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Imię i nazwisko</label>
                     <input
                       type="text"
+                      id="name"
                       name="name"
                       className="w-full bg-slate-50 border border-slate-200 p-4 focus:outline-none focus:ring-2 focus:ring-[#5A7358]/20 focus:border-[#5A7358] transition-all"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Adres e-mail *</label>
+                    <label htmlFor="email" className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Adres e-mail *</label>
                     <input
                       type="email"
+                      id="email"
                       name="email"
                       required
                       className="w-full bg-slate-50 border border-slate-200 p-4 focus:outline-none focus:ring-2 focus:ring-[#5A7358]/20 focus:border-[#5A7358] transition-all"
@@ -133,16 +136,18 @@ export default function Contact() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Numer telefonu</label>
+                  <label htmlFor="phone" className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Numer telefonu</label>
                   <input
                     type="tel"
+                    id="phone"
                     name="phone"
                     className="w-full bg-slate-50 border border-slate-200 p-4 focus:outline-none focus:ring-2 focus:ring-[#5A7358]/20 focus:border-[#5A7358] transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Wiadomość *</label>
+                  <label htmlFor="message" className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2">Wiadomość *</label>
                   <textarea
+                    id="message"
                     name="message"
                     required
                     rows={4}

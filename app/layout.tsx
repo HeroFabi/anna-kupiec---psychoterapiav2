@@ -1,5 +1,19 @@
 import type { Metadata } from 'next';
+import { Montserrat, Cormorant_Garamond } from 'next/font/google';
 import './globals.css';
+
+const montserrat = Montserrat({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-serif',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Anna Kupiec - Psychoterapia Poznań | EMDR, NARM, Trauma',
@@ -15,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pl" className="scroll-smooth">
+    <html lang="pl" className={`scroll-smooth ${montserrat.variable} ${cormorant.variable}`}>
       <body className="font-sans text-gray-800 antialiased bg-[#FAFAFA] w-full overflow-x-hidden" suppressHydrationWarning>
         {children}
       </body>

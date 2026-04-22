@@ -1,6 +1,7 @@
 'use client';
 
-import Navbar, { navLinks } from '@/components/sections/Navbar';
+import Navbar from '@/components/sections/Navbar';
+import { navLinks } from '@/lib/constants';
 import Footer from '@/components/sections/Footer';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { CheckCircle2, ChevronRight, ArrowLeft } from 'lucide-react';

@@ -25,16 +25,16 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <span className="block text-white/70 font-semibold tracking-widest uppercase text-xs mb-4">
+          <span className="block text-white/90 font-semibold tracking-widest uppercase text-xs mb-4">
             Profesjonalny Gabinet Psychoterapii
           </span>
           <h1 className="font-serif text-2xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white">
             Bezpieczna przestrzeń <br /><span className="font-light">w leczeniu zranień w relacjach</span>
           </h1>
-          <p className="text-base md:text-lg mb-2 text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base md:text-lg mb-2 text-white font-light leading-relaxed max-w-2xl mx-auto">
             Specjalizuję się w pracy z traumą relacyjną,
           </p>
-          <p className="text-base md:text-lg mb-10 text-white/80 font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base md:text-lg mb-10 text-white font-light leading-relaxed max-w-2xl mx-auto">
             wynikającą z trudnych relacji i więzi.
           </p>
           <a

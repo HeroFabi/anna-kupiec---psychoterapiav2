@@ -5,12 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
-export const navLinks = [
-  { name: 'O mnie', href: '/#o-mnie' },
-  { name: 'Metody pracy', href: '/#metody' },
-  { name: 'Cennik', href: '/#cennik' },
-  { name: 'Kontakt', href: '/#kontakt' },
-];
+import { navLinks } from '@/lib/constants';
 
 interface NavbarProps {
   isSolid?: boolean;
@@ -73,11 +68,13 @@ export default function Navbar({ isSolid = false }: NavbarProps) {
         <button
           className="md:hidden p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Przełącz menu mobilne"
+          aria-expanded={isMobileMenuOpen}
         >
           {isMobileMenuOpen ? (
-            <X className={`w-6 h-6 ${activeState ? 'text-slate-900' : 'text-white'}`} />
+            <X className={`w-6 h-6 ${activeState ? 'text-slate-900' : 'text-white'}`} aria-hidden="true" />
           ) : (
-            <Menu className={`w-6 h-6 ${activeState ? 'text-slate-900' : 'text-white'}`} />
+            <Menu className={`w-6 h-6 ${activeState ? 'text-slate-900' : 'text-white'}`} aria-hidden="true" />
           )}
         </button>
       </div>
