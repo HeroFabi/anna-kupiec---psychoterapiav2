@@ -2,10 +2,10 @@ import { FadeIn } from '@/components/ui/FadeIn';
 
 export default function Pricing() {
   const prices = [
-    { title: 'Psychoterapia indywidualna', price: '230 zł', time: '50 min' },
-    { title: 'Psychoterapia indywidualna EMDR', price: '230 zł', time: '50 min' },
-    { title: 'Psychoterapia pary', price: '250 zł', time: '50 min' },
-    { title: 'Psychoterapia rodziny', price: '300 zł', time: '90 min' },
+    { title: 'Psychoterapia indywidualna', price: '250 zł', time: '50 min' },
+    { title: 'Psychoterapia indywidualna EMDR', price: '250 zł', time: '50 min' },
+    { title: 'Psychoterapia pary', price: '300 zł', time: '70 min' },
+    { title: 'Psychoterapia rodziny', price: '300 zł', time: '70 min' },
   ];
 
   return (
