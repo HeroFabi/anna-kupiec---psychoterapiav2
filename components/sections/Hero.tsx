@@ -29,7 +29,7 @@ export default function Hero() {
             Profesjonalny Gabinet Psychoterapii
           </span>
           <h1 className="font-serif text-2xl md:text-5xl lg:text-6xl mb-6 leading-tight text-white">
-            Bezpieczna przestrzeń <br /><span className="font-light">w leczeniu zranień w relacjach</span>
+            Bezpieczna przestrzeń <br /><span className="font-light">w leczeniu zranień relacyjch</span>
           </h1>
           <p className="text-base md:text-lg mb-2 text-white font-light leading-relaxed max-w-2xl mx-auto">
             Specjalizuję się w pracy z traumą relacyjną,
