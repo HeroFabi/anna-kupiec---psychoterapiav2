@@ -40,7 +40,7 @@ export default function About() {
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
                   <span>EMDR - Eye Movement Desensitization and Reprocessing – nowatorskie podejście do terapii osób z traumą rozwojową, depresją i lękiem. EMDR jest zalecaną metodą terapii po traumatycznych przeżyciach.   
-                    <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
+                   
                   <br> Szkolenia dodatkowe EMDR:</br>
 Budowanie spójności wewnętrznej: skoncentrowane na traumie relacyjne podejście do części zdysocjowanych.
 Terapia EMDR, indywidualna i grupowa, w pracy z napadami paniki, z agorafobią i bez.
