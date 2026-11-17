@@ -47,16 +47,16 @@ export default function About() {
   po traumatycznych przeżyciach.
 
   <p className="mt-4 font-normal text-slate-700">
-    Szkolenia dodatkowe EMDR:
+    - Szkolenia dodatkowe EMDR:
   </p>
 
   <p className="mt-2">
-    Budowanie spójności wewnętrznej: skoncentrowane na traumie
+    - Budowanie spójności wewnętrznej: skoncentrowane na traumie
     relacyjne podejście do części zdysocjowanych.
   </p>
 
   <p className="mt-2">
-    Terapia EMDR, indywidualna i grupowa, w pracy z napadami
+    - Terapia EMDR, indywidualna i grupowa, w pracy z napadami
     paniki, z agorafobią i bez.
   </p>
 
