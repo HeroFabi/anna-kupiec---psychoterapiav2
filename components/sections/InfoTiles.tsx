@@ -32,7 +32,7 @@ export default function InfoTiles() {
               <div className="mt-auto pt-6 border-t border-slate-100">
                 <div className="inline-flex items-center text-base font-medium text-[#5A7358] bg-[#5A7358]/10 py-2.5 px-5">
                   <HeartPulse className="w-4 h-4 mr-2 shrink-0" />
-                  Pracuję również z osobami neuroróżnorodnymi
+                  Pracuję również z osobami neuratypowymi
                 </div>
               </div>
             </div>
