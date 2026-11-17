@@ -56,7 +56,7 @@ export default function About() {
   </p>
 
   <p className="mt-2">
-    Zastosowanie terapii EMDR w leczeniu uzależnień
+    - Zastosowanie terapii EMDR w leczeniu uzależnień
     od substancji psychoaktywnych.
   </p> </span>
                 </li>
