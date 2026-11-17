@@ -58,7 +58,7 @@ export default function About() {
   <p className="mt-2">
     Zastosowanie terapii EMDR w leczeniu uzależnień
     od substancji psychoaktywnych.
-  </p>. </span>
+  </p> </span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
