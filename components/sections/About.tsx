@@ -75,6 +75,9 @@ export default function About() {
                 </li>
               </ul>
               <p className="mt-4 text-slate-900 border-t border-slate-100 pt-8">
+                 <span> Swoją pracę poddaję regularnej superwizji.</span>
+              </p>
+              <p className="mt-4 text-slate-900 border-t border-slate-100 pt-8">
                 W życiu prywatnym cenię sobie sztukę i sport.<br />
                 Interesuję się fizyką kwantową i duchowością w psychoterapii.
                   <span> Swoją pracę poddaję regularnej superwizji.</span>
