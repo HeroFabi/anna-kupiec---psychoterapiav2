@@ -71,11 +71,13 @@ export default function About() {
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-[#5A7358] mr-4 mt-2.5 shrink-0" />
                   <span>Posiadam doświadczenie organizowania i prowadzenia treningów rozwojowych.</span>
+                 <span> Swoją pracę poddaję regularnej superwizji.</span>
                 </li>
               </ul>
               <p className="mt-4 text-slate-900 border-t border-slate-100 pt-8">
                 W życiu prywatnym cenię sobie sztukę i sport.<br />
                 Interesuję się fizyką kwantową i duchowością w psychoterapii.
+                
               </p>
             </div>
           </div>
