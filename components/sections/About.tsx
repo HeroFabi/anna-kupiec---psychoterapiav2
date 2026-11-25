@@ -24,7 +24,7 @@ export default function About() {
 
             <div className="prose prose-slate prose-lg font-light text-slate-600">
               <p>
-                Jestem magistrem psychologii klinicznej oraz magistrem informatyki w naukach eksperymentalnych. Poszukuję jak najbardziej skutecznych metod rozwiązywania problemów psychologicznych, wykorzystując do tego najnowsze badania naukowe.
+                Jestem magistrem psychologii klinicznej oraz magistrem informatyki w naukach eksperymentalnych. Poszukuję jak najbardziej skutecznych metod rozwiązywania problemów psychologicznych, wykorzystując do tego najnowsze badania naukowe. Swoją pracę poddaję regularnej superwizji.
               </p>
 
               <h4 className="font-serif text-2xl text-slate-900 mt-12 mb-6">Przygotowanie:</h4>
@@ -74,9 +74,7 @@ export default function About() {
                
                 </li>
               </ul>
-              <p className="mt-4 text-slate-900 border-t border-slate-100 pt-8">
-                 <span> Swoją pracę poddaję regularnej superwizji.</span>
-              </p>
+           
               <p className="mt-4 text-slate-900 border-t border-slate-100 pt-8">
                 W życiu prywatnym cenię sobie sztukę i sport.<br />
                 Interesuję się fizyką kwantową i duchowością w psychoterapii.
